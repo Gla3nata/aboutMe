@@ -10,7 +10,7 @@
         url(../fonts/arodorapro-light.eot) format('eot'),
         url(../fonts/arodorapro-light.ttf) format('ttf');
     font-style: normal;
-    font-weight: light;
+    font-weight: 300;
     font-display: swap;
 }
 
@@ -20,7 +20,7 @@
         url(../fonts/next-art-bold.eot) format('eot'),
         url(../fonts/next-art-bold.ttf) format('ttf');
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-display: swap;
 }
 
@@ -30,7 +30,7 @@
         url(../fonts/next-art-regular.eot) format('eot'),
         url(../fonts/next-art-regular.ttf) format('ttf');
     font-style: normal;
-    font-weight: regular;
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -40,7 +40,7 @@
         url(../fonts/next-art-semibold.eot) format('eot'),
         url(../fonts/next-art-semibold.ttf) format('ttf');
     font-style: normal;
-    font-weight: semibold;
+    font-weight: 600;
     font-display: swap;
 }
 
@@ -50,7 +50,7 @@
         url(../fonts/NicoMoji-Regular.eot) format('eot'),
         url(../fonts/NicoMoji-Regular.ttf) format('ttf');
     font-style: normal;
-    font-weight: regular;
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -412,15 +412,6 @@ button {
     right: 50px;
 }
 
-/* .spinner-yellow:hover,
-.spinner-white:hover,
-.spinner-blue:hover {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-} */
 
 .about-wrapper:hover .spinner {
     -webkit-transform: rotate(180deg);
@@ -455,7 +446,38 @@ button {
     padding: 50px;
 }
 
+.swiper-slide {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.swiper-slide-link img {
+    width: 493px;
+    height: 500px;
+    background: #C4C4C4;
+    border-radius: 29px;
+}
+
+.swiper-slide-text {
+    width: calc(100% - 500px);
+    text-align: center;
+    font-family: 'arodorapro';
+    line-height: 0.8;
+    font-size: 18px;
+}
+
+.swiper-slide-title {
+    font-size: 24px;
+}
+
+.swiper-slide-description {
+    padding-bottom: 25px;
+}
+
+.link {
+    color: #E2A100;
+}
 
 .footer {
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
