@@ -127,11 +127,54 @@ button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    position: relative;
+    height: 4em;
+    width: 100%;
 }
 
 .navigation-item {
     padding: 50px;
+    cursor: pointer;
+
 }
+
+.navigation-item:last-child::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 10em;
+    border-radius: 4px;
+    transition: left .5s ease-in-out;
+    opacity: 1;
+}
+
+.navigation-item:nth-child(1):hover~.navigation-item:last-child::after {
+    left: 0;
+    background: #0ebeff;
+}
+
+.navigation-item:nth-child(2):hover~.navigation-item:last-child::after {
+    left: 10em;
+    background: #f96432;
+}
+
+.navigation-item:nth-child(3):hover~.navigation-item:last-child::after {
+    left: 20em;
+    background: #47CF73;
+}
+
+.navigation-item:nth-child(4):hover~.navigation-item:last-child::after {
+    left: 40em;
+    background: #f93462;
+}
+
+.navigation-item:nth-child(5):hover~navigation-item:last-child::after {
+    left: 60em;
+    background: #AE63E4;
+}
+
 
 .slider-inner {
     display: flex;
@@ -168,14 +211,24 @@ button {
 }
 
 .button {
-    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
-    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    box-shadow: 0px 2px 13px rgba(3, 189, 246, 0.48);
     border-radius: 6px;
     max-width: 250px;
     min-height: 47px;
     width: 100%;
     margin-top: 27px;
     text-align: center;
+}
+
+.button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .button-text {
