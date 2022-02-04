@@ -130,7 +130,17 @@ button {
 }
 
 .navigation-item {
-    padding-right: 145px;
+    padding: 10px 45px;
+}
+
+.navigation-item:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .slider-inner {
@@ -421,6 +431,10 @@ button {
     transform: rotate(180deg);
 }
 
+.portfolio {
+    margin-bottom: 25px;
+}
+
 .portfolio-title {
     text-align: center;
     padding-top: 100px;
@@ -510,6 +524,34 @@ button {
     }
 }
 
+.container {
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.contact__title {}
+
+.contact__text {}
+
+.contact-button-send {}
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid green;
+}
+
+.button-social {}
+
+.WAButton {}
+
+.svg-image {}
+
+.TGButton {}
+
+.IGbutton {}
+
+.linked {}
 
 .footer {
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
