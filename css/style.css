@@ -443,7 +443,6 @@ button {
 .portfolio__slider-item {
     width: 500px;
     height: 500px;
-    border: 1px solid red;
 }
 
 .image-slider {
@@ -524,34 +523,32 @@ button {
     }
 }
 
-.container {
+.contact .container {
     padding: 20px;
-    border: 1px solid red;
+    text-align: center;
 }
 
-.contact__title {}
-
-.contact__text {}
-
-.contact-button-send {}
+.contact__title {
+    margin-bottom: 20px;
+}
 
 .contact-buttons {
     display: flex;
     justify-content: space-around;
-    border: 1px solid green;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.button-social {}
 
-.WAButton {}
+.svg-image {
+    fill: #C4C4C4;
+    transition: .5s;
+}
 
-.svg-image {}
+.svg-image:hover {
+    fill: #03e9f4;
+}
 
-.TGButton {}
-
-.IGbutton {}
-
-.linked {}
 
 .footer {
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
@@ -562,4 +559,14 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 20px 50px;
+}
+
+.footer__menu-item {
+    transition: .5s;
+    padding: 10px 0;
+}
+
+.footer__menu-item:hover {
+    color: #03e9f4;
+    ;
 }
