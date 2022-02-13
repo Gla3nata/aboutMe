@@ -78,6 +78,7 @@ img {
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 ul {
@@ -91,7 +92,7 @@ h2 {
     font-weight: normal;
     font-size: 48px;
     line-height: 54px;
-    align-items: center;
+    text-align: center;
     margin: 0;
 }
 
@@ -102,13 +103,20 @@ p {
 button {
     cursor: pointer;
 }
+.header{
+    height: 100vh;
+}
 
 .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 90px;
-    padding: 25px 0;
+   margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    background:  #2c2c2c59;
+    max-width: 1220px;
+    width: 100%;
 }
 
 .logo-link {
@@ -146,7 +154,8 @@ button {
 .slider-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding-top: 234px;
 }
 
 .slider-wrapper {
@@ -224,99 +233,63 @@ button {
 .slider-image img {
     max-width: 456px;
     width: 100%;
-}
-
-.about {
-    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-    padding-top: 80px;
-}
-
-.about .container {
-    padding-bottom: 100px;
-
-}
+} 
 
 .stack {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 136px;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .stack-item {
-    width: 270px;
-    height: 270px;
-    display: flex;
+min-height: 120px;
+width: 120px;
+margin: 10px;
+background: #2A2A2A;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+border-radius: 29px;
+display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 30px;
-    background-color: #18191f;
-    border-radius: 29px;
-    box-shadow: 2px 2px 2px #00000080,
-        10px 1px 12px #00000080,
-        2px 2px 10px #00000080,
-        2px 2px 3px #00000080,
-        inset 2px 2px 10px #00000080,
-        inset 2px 2px 10px #00000080,
-        inset 2px 2px 10px #00000080,
-        inset 2px 2px 10px #00000080;
+    align-items: center;;
 }
-
-.stack-item span {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 34px;
-    line-height: 29px;
+.fab {
+   color: #00C4F0;
 }
-
 #css,
 #js,
 #github,
 #html,
 #figma,
 #gulp {
-    font-size: 8em;
-    padding: 20px;
-    animation: animate 3s linear infinite;
-    text-shadow: 0 0 50px #0072ff,
-        0 0 100px #0072ff,
-        0 0 150px #0072ff,
-        0 0 200px #0072ff;
+    font-size: 2em;
+    padding: 10px;
+}
+.stack-item span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1;
+    
+}
+.stack-item img {
+    width: 45px;
+    margin-bottom: 10px;
 }
 
-#js {
-    animation-delay: 0.3s;
+.about {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  
 }
 
-#html {
-    animation-delay: 0.7s;
+.about .container {
+    padding-bottom: 100px;
+
 }
-
-#figma {
-    animation-delay: 0.5s;
-}
-
-#gulp {
-    animation-delay: 0.9s;
-}
-
-#github {
-    animation-delay: 0.1s;
-}
-
-@keyframes animate {
-    from {
-        filter: hue-rotate(0deg);
-    }
-
-    to {
-        filter: hue-rotate(360deg);
-    }
-}
-
 .about-wrapper {
     margin: 0 auto;
     display: flex;
@@ -433,11 +406,11 @@ button {
 
 .portfolio {
     margin-bottom: 25px;
+    padding-top: 50px;
 }
 
-.portfolio-title {
-    text-align: center;
-    padding-top: 100px;
+.portfolio__title {
+    margin-bottom: 25px;
 }
 
 .portfolio__slider-item {
@@ -557,16 +530,29 @@ button {
 .footer__inner {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 20px 50px;
+    padding: 0 50px;
 }
 
 .footer__menu-item {
     transition: .5s;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .footer__menu-item:hover {
     color: #03e9f4;
-    ;
+}
+.footer__contacts {
+
+}
+.footer__title {
+    font-family: 'next-art';
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.footer__contact-mail,
+.footer__contact-call {
+    padding: 10px 0;
+    font-size: 14px;
 }
