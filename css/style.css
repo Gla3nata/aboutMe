@@ -183,14 +183,12 @@ button {
     top: 8px;
   }
 
-
-
 .slider__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 110px;
+    padding-top: 290px;
 }
 
 .slider__wrapper {
