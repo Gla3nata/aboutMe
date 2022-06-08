@@ -3,6 +3,9 @@
 *::after {
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: 'arodorapro';
@@ -440,7 +443,7 @@ display: flex;
 
 .portfolio {
     margin-bottom: 25px;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .portfolio__title {
